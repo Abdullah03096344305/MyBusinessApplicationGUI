@@ -32,8 +32,8 @@ namespace MyBusinessApplicationGUI
         private void button3_Click(object sender, EventArgs e)
         {
             //yahan pr user menu show krwain gy 
-            // Form UserM = new UserMenu();
-            //   UserM.Show();
+             Form UserM = new UserMenu();
+             UserM.Show();
 
         }
 

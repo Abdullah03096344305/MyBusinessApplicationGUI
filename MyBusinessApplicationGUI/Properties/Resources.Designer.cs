@@ -63,6 +63,26 @@ namespace MyBusinessApplicationGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _32380_contacts_addressbook_contact_us_mail_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("32380_contacts_addressbook_contact us_mail_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3Lines {
+            get {
+                object obj = ResourceManager.GetObject("3Lines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5764209_admin_microsoft_icon {
             get {
                 object obj = ResourceManager.GetObject("5764209_admin_microsoft_icon", resourceCulture);
@@ -76,6 +96,106 @@ namespace MyBusinessApplicationGUI.Properties {
         internal static System.Drawing.Bitmap _8333845_targeting_target_user_customer_icon {
             get {
                 object obj = ResourceManager.GetObject("8333845_targeting_target_user_customer_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9554733_story_post_mail_email_message_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("9554733_story_post_mail_email_message_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BIllicon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("BIllicon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burgerIcon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("burgerIcon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DealsIcon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("DealsIcon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DeliveryIcon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("DeliveryIcon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon__3_ {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon__4_ {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Locarion__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Locarion (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

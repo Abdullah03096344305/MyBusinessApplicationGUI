@@ -18,8 +18,7 @@ namespace MyBusinessApplicationGUI
         {
             InitializeComponent();
             string adminKeyPath = "AdminKeyData.txt";
-            AdminKeyDL.ReadDataFromFile(adminKeyPath);
-            
+            AdminKeyDL.ReadDataFromFile(adminKeyPath);            
         }
         private void CLearDataFromForm()
         {
