@@ -188,6 +188,7 @@ namespace MyBusinessApplicationGUI
             this.Controls.Add(this.button1);
             this.Name = "SignInUpForm";
             this.Text = "SignInUpForm";
+            this.Load += new System.EventHandler(this.SignInUpForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

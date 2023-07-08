@@ -41,10 +41,8 @@ namespace MyBusinessApplicationGUI
             MUser validUser = MUserDL.SignIn(user);
             if (validUser != null)
             {
-                /* Form moreForm = new AdminCheck();
-                 moreForm.Show();*/
-                MessageBox.Show("Hello World");
-
+                Form moreForm = new UserCheckAdminorCustomer();
+                moreForm.Show();                
             }
             else
             {

@@ -63,6 +63,26 @@ namespace MyBusinessApplicationGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5764209_admin_microsoft_icon {
+            get {
+                object obj = ResourceManager.GetObject("5764209_admin_microsoft_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8333845_targeting_target_user_customer_icon {
+            get {
+                object obj = ResourceManager.GetObject("8333845_targeting_target_user_customer_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_igor_starkov_914388 {
             get {
                 object obj = ResourceManager.GetObject("pexels-igor-starkov-914388", resourceCulture);

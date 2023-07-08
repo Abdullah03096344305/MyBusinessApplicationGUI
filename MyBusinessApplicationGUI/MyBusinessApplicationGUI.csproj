@@ -46,7 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCheck.Designer.cs">
+      <DependentUpon>AdminCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\AdminKey.cs" />
     <Compile Include="BL\MUser.cs" />
+    <Compile Include="DL\AdminKeyDL.cs" />
     <Compile Include="DL\MUserDL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -74,6 +82,15 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserCheckAdminorCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCheckAdminorCustomer.Designer.cs">
+      <DependentUpon>UserCheckAdminorCustomer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminCheck.resx">
+      <DependentUpon>AdminCheck.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +113,9 @@
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserCheckAdminorCustomer.resx">
+      <DependentUpon>UserCheckAdminorCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +132,11 @@
   <ItemGroup>
     <None Include="Resources\pexels-igor-starkov-914388.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\5764209_admin_microsoft_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8333845_targeting_target_user_customer_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -85,6 +85,7 @@ namespace MyBusinessApplicationGUI
             // Password
             // 
             this.Password.BackColor = System.Drawing.Color.PeachPuff;
+            this.Password.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password.Location = new System.Drawing.Point(45, 312);
             this.Password.Multiline = true;
             this.Password.Name = "Password";
@@ -94,6 +95,7 @@ namespace MyBusinessApplicationGUI
             // UserName
             // 
             this.UserName.BackColor = System.Drawing.Color.PeachPuff;
+            this.UserName.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName.Location = new System.Drawing.Point(45, 200);
             this.UserName.Multiline = true;
             this.UserName.Name = "UserName";
