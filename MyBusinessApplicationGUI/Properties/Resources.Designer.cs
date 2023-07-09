@@ -113,6 +113,26 @@ namespace MyBusinessApplicationGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abdullah3 {
+            get {
+                object obj = ResourceManager.GetObject("abdullah3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BackgroundBlackCloth {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundBlackCloth", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BIllicon__1_ {
             get {
                 object obj = ResourceManager.GetObject("BIllicon (1)", resourceCulture);

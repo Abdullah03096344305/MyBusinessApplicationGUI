@@ -28,7 +28,8 @@ namespace MyBusinessApplicationGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form UserM = new UserMenu();
+            UserM.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,12 +39,14 @@ namespace MyBusinessApplicationGUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form UserM = new DeliveryMenu();
+            UserM.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form UserM = new Smashers();
+            UserM.Show();
         }
 
        
@@ -96,6 +99,12 @@ namespace MyBusinessApplicationGUI
         private void button7_Click(object sender, EventArgs e)
         {
             Form UserM = new DeliveryMenu();
+            UserM.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form UserM = new StoryMenu();
             UserM.Show();
         }
     }
