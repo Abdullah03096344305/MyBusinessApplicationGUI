@@ -80,5 +80,23 @@ namespace MyBusinessApplicationGUI
             Form UserM = new BurgerMenu();
             UserM.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form UserM = new DealMenu();
+            UserM.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form UserM = new BillMenu();
+            UserM.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form UserM = new DeliveryMenu();
+            UserM.Show();
+        }
     }
 }

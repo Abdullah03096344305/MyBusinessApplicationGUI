@@ -211,6 +211,7 @@ namespace MyBusinessApplicationGUI
             this.button10.Text = "             Deals";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel5
             // 
@@ -234,6 +235,7 @@ namespace MyBusinessApplicationGUI
             this.button8.Text = "             Bill";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel4
             // 
@@ -257,6 +259,7 @@ namespace MyBusinessApplicationGUI
             this.button7.Text = "             Delivery Charges";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel6
             // 
