@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBurgerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBurgerMenu.Designer.cs">
+      <DependentUpon>AddBurgerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDealMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDealMenu.Designer.cs">
+      <DependentUpon>AddDealMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminCheck.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminCheck.Designer.cs">
       <DependentUpon>AdminCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminChoiceForm.Designer.cs">
+      <DependentUpon>AdminChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="BillMenu.cs">
       <SubType>Form</SubType>
@@ -74,6 +98,18 @@
     </Compile>
     <Compile Include="DealMenu.Designer.cs">
       <DependentUpon>DealMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteBurgerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBurgerMenu.Designer.cs">
+      <DependentUpon>DeleteBurgerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDealMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDealMenu.Designer.cs">
+      <DependentUpon>DeleteDealMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="DeliveryMenu.cs">
       <SubType>Form</SubType>
@@ -135,8 +171,20 @@
     <Compile Include="UserMenu.Designer.cs">
       <DependentUpon>UserMenu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddBurgerMenu.resx">
+      <DependentUpon>AddBurgerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDealMenu.resx">
+      <DependentUpon>AddDealMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminCheck.resx">
       <DependentUpon>AdminCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminChoiceForm.resx">
+      <DependentUpon>AdminChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BillMenu.resx">
       <DependentUpon>BillMenu.cs</DependentUpon>
@@ -146,6 +194,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DealMenu.resx">
       <DependentUpon>DealMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBurgerMenu.resx">
+      <DependentUpon>DeleteBurgerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDealMenu.resx">
+      <DependentUpon>DeleteDealMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeliveryMenu.resx">
       <DependentUpon>DeliveryMenu.cs</DependentUpon>
@@ -247,6 +301,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\abdullah3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\475329.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487857.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3778390.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4377480 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4377488.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6851170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9554733_story_post_mail_email_message_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-valeria-boltneva-1639565.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shortBurger.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

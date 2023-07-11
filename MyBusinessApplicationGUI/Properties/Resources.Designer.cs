@@ -63,9 +63,29 @@ namespace MyBusinessApplicationGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1487857 {
+            get {
+                object obj = ResourceManager.GetObject("1487857", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _32380_contacts_addressbook_contact_us_mail_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("32380_contacts_addressbook_contact us_mail_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3778390 {
+            get {
+                object obj = ResourceManager.GetObject("3778390", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +103,49 @@ namespace MyBusinessApplicationGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4377480__2_ {
+            get {
+                object obj = ResourceManager.GetObject("4377480 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4377488 {
+            get {
+                object obj = ResourceManager.GetObject("4377488", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _475329 {
+            get {
+                object obj = ResourceManager.GetObject("475329", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5764209_admin_microsoft_icon {
             get {
                 object obj = ResourceManager.GetObject("5764209_admin_microsoft_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6851170 {
+            get {
+                object obj = ResourceManager.GetObject("6851170", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +166,16 @@ namespace MyBusinessApplicationGUI.Properties {
         internal static System.Drawing.Bitmap _9554733_story_post_mail_email_message_icon__1_ {
             get {
                 object obj = ResourceManager.GetObject("9554733_story_post_mail_email_message_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9554733_story_post_mail_email_message_icon__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("9554733_story_post_mail_email_message_icon (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +296,26 @@ namespace MyBusinessApplicationGUI.Properties {
         internal static System.Drawing.Bitmap pexels_igor_starkov_914388 {
             get {
                 object obj = ResourceManager.GetObject("pexels-igor-starkov-914388", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_valeria_boltneva_1639565 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-valeria-boltneva-1639565", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shortBurger {
+            get {
+                object obj = ResourceManager.GetObject("shortBurger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
