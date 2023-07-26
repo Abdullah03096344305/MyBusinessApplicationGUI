@@ -37,29 +37,29 @@ namespace MyBusinessApplicationGUI
             this.sidebarContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.MenuButton = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebarContainer.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -152,59 +152,6 @@ namespace MyBusinessApplicationGUI
             this.label1.TabIndex = 1;
             this.label1.Text = "MENU";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Location = new System.Drawing.Point(3, 114);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(253, 47);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.button10);
-            this.panel7.Location = new System.Drawing.Point(3, 167);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(253, 47);
-            this.panel7.TabIndex = 37;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Location = new System.Drawing.Point(3, 220);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(253, 47);
-            this.panel5.TabIndex = 37;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Location = new System.Drawing.Point(3, 273);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(253, 47);
-            this.panel4.TabIndex = 37;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.button9);
-            this.panel6.Location = new System.Drawing.Point(3, 326);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(253, 47);
-            this.panel6.TabIndex = 37;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(3, 379);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(253, 47);
-            this.panel3.TabIndex = 37;
-            // 
-            // sidebarTimer
-            // 
-            this.sidebarTimer.Interval = 10;
-            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
-            // 
             // MenuButton
             // 
             this.MenuButton.BackColor = System.Drawing.Color.White;
@@ -217,6 +164,14 @@ namespace MyBusinessApplicationGUI
             this.MenuButton.TabIndex = 0;
             this.MenuButton.TabStop = false;
             this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Location = new System.Drawing.Point(3, 114);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(253, 47);
+            this.panel2.TabIndex = 1;
             // 
             // button5
             // 
@@ -234,6 +189,14 @@ namespace MyBusinessApplicationGUI
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.button10);
+            this.panel7.Location = new System.Drawing.Point(3, 167);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(253, 47);
+            this.panel7.TabIndex = 37;
+            // 
             // button10
             // 
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -249,6 +212,14 @@ namespace MyBusinessApplicationGUI
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button8);
+            this.panel5.Location = new System.Drawing.Point(3, 220);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(253, 47);
+            this.panel5.TabIndex = 37;
             // 
             // button8
             // 
@@ -266,6 +237,14 @@ namespace MyBusinessApplicationGUI
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Location = new System.Drawing.Point(3, 273);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(253, 47);
+            this.panel4.TabIndex = 37;
+            // 
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -282,6 +261,14 @@ namespace MyBusinessApplicationGUI
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.button9);
+            this.panel6.Location = new System.Drawing.Point(3, 326);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(253, 47);
+            this.panel6.TabIndex = 37;
+            // 
             // button9
             // 
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -296,6 +283,15 @@ namespace MyBusinessApplicationGUI
             this.button9.Text = "             Locations";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button6);
+            this.panel3.Location = new System.Drawing.Point(3, 379);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(253, 47);
+            this.panel3.TabIndex = 37;
             // 
             // button6
             // 
@@ -312,6 +308,11 @@ namespace MyBusinessApplicationGUI
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // UserMenu
             // 
@@ -331,13 +332,13 @@ namespace MyBusinessApplicationGUI
             this.sidebarContainer.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).EndInit();
             this.ResumeLayout(false);
 
         }

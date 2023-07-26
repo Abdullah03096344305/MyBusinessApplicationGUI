@@ -19,11 +19,26 @@ namespace MyBusinessApplicationGUI
         {
             InitializeComponent();
         }
-        int totalPrice;
+       /* int totalPrice;*/
         private void DealMenu_Load(object sender, EventArgs e)
         {
             string dealPath = "dealFile.txt";
-            DealDL.ReadDealFile(dealPath, DealListView);
+            DealDL.ReadDealFile(dealPath);
+            UpdateListView();
+        }
+        public void UpdateListView()
+        {
+            DealListView.Items.Clear(); 
+            foreach (var deal in DealDL.GetDeals())
+            {
+                AddDealToListView(deal);
+            }
+        }
+        private void AddDealToListView(Deals deal)
+        {
+            ListViewItem item = new ListViewItem(deal.GetDealName());
+            item.SubItems.Add(deal.GetDealPrice().ToString());
+            DealListView.Items.Add(item);
         }
         public int GetDealPrice()
         {
@@ -33,17 +48,14 @@ namespace MyBusinessApplicationGUI
         {
             this.Close();
         }
-
         private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)
         {
             textBoxQuantity.Text = " ";
         }
-
         private void DealListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (DealListView.SelectedItems.Count > 0)
             {
-
                 foreach (ListViewItem selectedItem in DealListView.SelectedItems)
                 {
                     int price;

@@ -16,7 +16,24 @@ namespace MyBusinessApplicationGUI.DL
         {
             burgers.Add(burger);
             AddBurgerIntoListView(burger, listView);
-        }       
+        }
+        public static void AddBurgerToList(Burger burger)
+        {
+            burgers.Add(burger);
+        }
+        public static List<Burger> GetBurgers()
+        {
+            return burgers;
+        }
+        public static void RemoveBurgerFromList(string burgerName, int burgerPrice)
+        {
+            Burger burgerToRemove = burgers.FirstOrDefault(b => b.GetBurgerName() == burgerName && b.GetBurgerPrice() == burgerPrice);
+            if (burgerToRemove != null)
+            {
+                burgers.Remove(burgerToRemove);
+            }
+        }
+
         public static void AddBurgerIntoListView(Burger burger, ListView listView)
         {
             ListViewItem item = new ListViewItem(burger.GetBurgerName());
@@ -40,10 +57,11 @@ namespace MyBusinessApplicationGUI.DL
             }
             return item;
         }
-        public static bool ReadBurgerFile(string burgerPath, ListView listView)
+        public static bool ReadBurgerFile(string burgerPath)
         {
             if (File.Exists(burgerPath))
             {
+                burgers.Clear(); 
                 StreamReader fileVariable = new StreamReader(burgerPath);
                 string record;
                 while ((record = fileVariable.ReadLine()) != null)
@@ -52,7 +70,7 @@ namespace MyBusinessApplicationGUI.DL
                     string burgerPrice = ParseData(record, 2);
                     int price = int.Parse(burgerPrice);
                     Burger burger = new Burger(burgerName, price);
-                    AddBurgerIntoList(burger, listView);
+                    AddBurgerToList(burger);
                 }
                 fileVariable.Close();
                 return true;
@@ -62,13 +80,23 @@ namespace MyBusinessApplicationGUI.DL
                 return false;
             }
         }
-
         public static void StoreUserIntoFile(Burger burgers, string burgerPath)
         {
             StreamWriter file = new StreamWriter(burgerPath, true);
             file.WriteLine(burgers.GetBurgerName() + "," + burgers.GetBurgerPrice());
             file.Flush();
             file.Close();
+        }
+        public static void UpdateBurgerFile(string burgerPath)
+        {
+            using (StreamWriter file = new StreamWriter(burgerPath, false))
+            {
+                foreach (var burger in burgers)
+                {
+                    file.WriteLine(burger.GetBurgerName() + "," + burger.GetBurgerPrice());
+                }
+                file.Flush();
+            }
         }
 
     }

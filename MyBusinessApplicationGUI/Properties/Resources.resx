@@ -142,14 +142,14 @@
   <data name="BIllicon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BIllicon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DeliveryIcon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeliveryIcon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pexels-valeria-boltneva-1639565" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-valeria-boltneva-1639565.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5764209_admin_microsoft_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5764209_admin_microsoft_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Locarion (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Locarion (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4377480 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4377480 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="burgerIcon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\burgerIcon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +160,8 @@
   <data name="3Lines" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3Lines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DeliveryIcon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeliveryIcon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5764209_admin_microsoft_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5764209_admin_microsoft_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9554733_story_post_mail_email_message_icon (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9554733_story_post_mail_email_message_icon (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,16 +184,19 @@
   <data name="pexels-igor-starkov-914388" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-igor-starkov-914388.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shortBurger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shortBurger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HomeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HomeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="475329" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\475329.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4377480 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4377480 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Locarion (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Locarion (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shortBurger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shortBurger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="burger-logo-template_441059-18-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burger-logo-template_441059-18-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

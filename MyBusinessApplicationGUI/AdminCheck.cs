@@ -47,9 +47,9 @@ namespace MyBusinessApplicationGUI
             AdminKey validUser = AdminKeyDL.SignIn(keys);
             if (validUser != null)
             {
-                /* Form moreForm = new AdminMenu();
-                 moreForm.Show();*/
-                MessageBox.Show("Hola");
+                Form moreForm = new NewAdminMenu();
+                moreForm.Show();
+                /*  MessageBox.Show("Hola");*/
             }
             else
             {

@@ -8,33 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyBusinessApplicationGUI
+namespace MyBusinessApplicationGUI.Resources
 {
-    public partial class AddBurgerMenu : Form
+    public partial class LocationMenu : Form
     {
-        public AddBurgerMenu()
+        public LocationMenu()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void AddBurgerMenu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

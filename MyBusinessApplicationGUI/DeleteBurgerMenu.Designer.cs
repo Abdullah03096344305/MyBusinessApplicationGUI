@@ -33,8 +33,10 @@ namespace MyBusinessApplicationGUI
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label3 = new System.Windows.Forms.Label();
+            this.BurgerListView = new System.Windows.Forms.ListView();
+            this.Burger_Names = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Burger_Prices = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // button1
@@ -42,12 +44,13 @@ namespace MyBusinessApplicationGUI
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(611, 495);
+            this.button1.Location = new System.Drawing.Point(521, 569);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 36);
             this.button1.TabIndex = 74;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -76,21 +79,13 @@ namespace MyBusinessApplicationGUI
             this.button2.BackColor = System.Drawing.Color.Maroon;
             this.button2.Font = new System.Drawing.Font("Poor Richard", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(12, 495);
+            this.button2.Location = new System.Drawing.Point(12, 569);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 36);
+            this.button2.Size = new System.Drawing.Size(253, 36);
             this.button2.TabIndex = 66;
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(136, 175);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(452, 356);
-            this.listView1.TabIndex = 75;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -98,26 +93,55 @@ namespace MyBusinessApplicationGUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(132, 149);
+            this.label3.Location = new System.Drawing.Point(263, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 23);
+            this.label3.Size = new System.Drawing.Size(276, 23);
             this.label3.TabIndex = 76;
-            this.label3.Text = "Select a Item and Press Delete";
+            this.label3.Text = "Select an Item and Press Delete";
+            // 
+            // BurgerListView
+            // 
+            this.BurgerListView.BackColor = System.Drawing.Color.DarkOrange;
+            this.BurgerListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BurgerListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Burger_Names,
+            this.Burger_Prices});
+            this.BurgerListView.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerListView.ForeColor = System.Drawing.Color.Maroon;
+            this.BurgerListView.HideSelection = false;
+            this.BurgerListView.Location = new System.Drawing.Point(209, 182);
+            this.BurgerListView.Name = "BurgerListView";
+            this.BurgerListView.Size = new System.Drawing.Size(401, 347);
+            this.BurgerListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.BurgerListView.TabIndex = 77;
+            this.BurgerListView.UseCompatibleStateImageBehavior = false;
+            this.BurgerListView.View = System.Windows.Forms.View.Details;
+            // 
+            // Burger_Names
+            // 
+            this.Burger_Names.Text = "Burger Names";
+            this.Burger_Names.Width = 227;
+            // 
+            // Burger_Prices
+            // 
+            this.Burger_Prices.Text = "Burger Prices";
+            this.Burger_Prices.Width = 170;
             // 
             // DeleteBurgerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(965, 543);
+            this.ClientSize = new System.Drawing.Size(818, 617);
+            this.Controls.Add(this.BurgerListView);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Name = "DeleteBurgerMenu";
             this.Text = "DeleteBurgerMenu";
+            this.Load += new System.EventHandler(this.DeleteBurgerMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,7 +153,9 @@ namespace MyBusinessApplicationGUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListView BurgerListView;
+        private System.Windows.Forms.ColumnHeader Burger_Names;
+        private System.Windows.Forms.ColumnHeader Burger_Prices;
     }
 }

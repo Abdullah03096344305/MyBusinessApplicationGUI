@@ -19,7 +19,6 @@ namespace MyBusinessApplicationGUI
         {
             InitializeComponent();
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -31,9 +30,9 @@ namespace MyBusinessApplicationGUI
         private void BurgerMenu_Load(object sender, EventArgs e)
         {
             string burgerPath = "burgerFile.txt";
-            BurgerDL.ReadBurgerFile(burgerPath, BurgerListView);
+            BurgerDL.ReadBurgerFile(burgerPath);
+            UpdateListView();
         }
-
         private void BurgerListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (BurgerListView.SelectedItems.Count > 0)
@@ -45,11 +44,7 @@ namespace MyBusinessApplicationGUI
                     if (int.TryParse(selectedItem.SubItems[1].Text, out price) && int.TryParse(textBoxQuantity.Text, out quantity))
                     {
                         int itemTotal = price * quantity;
-                        totalPrice += itemTotal;
-                       
-                        /* int v = genral.GetPrice();
-                         MessageBox.Show(v.ToString());*/
-
+                        totalPrice += itemTotal;                       
                     }
                 }              
                 textBoxTotalPrice.Text = GetBurgerPrice().ToString();
@@ -58,10 +53,29 @@ namespace MyBusinessApplicationGUI
             }
 
         }
-
+        
         private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)
         {
             textBoxQuantity.Text = " ";
+        }
+        public void UpdateListView()
+        {
+            BurgerListView.Items.Clear(); // Clear existing items in the ListView.
+            foreach (var burger in BurgerDL.GetBurgers())
+            {
+                AddBurgerToListView(burger); // Add each burger from the BurgerDL list to the ListView.
+            }
+        }
+        private void AddBurgerToListView(Burger burger)
+        {
+            ListViewItem item = new ListViewItem(burger.GetBurgerName());
+            item.SubItems.Add(burger.GetBurgerPrice().ToString());
+            BurgerListView.Items.Add(item);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

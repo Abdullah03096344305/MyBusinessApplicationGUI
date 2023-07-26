@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyBusinessApplicationGUI.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -105,6 +106,12 @@ namespace MyBusinessApplicationGUI
         private void button6_Click(object sender, EventArgs e)
         {
             Form UserM = new StoryMenu();
+            UserM.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form UserM = new LocationMenu();
             UserM.Show();
         }
     }

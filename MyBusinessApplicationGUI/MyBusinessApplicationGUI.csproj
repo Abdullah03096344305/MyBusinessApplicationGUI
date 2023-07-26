@@ -127,6 +127,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAdminMenu.Designer.cs">
+      <DependentUpon>NewAdminMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="OurStoryMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\LocationMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\LocationMenu.Designer.cs">
+      <DependentUpon>LocationMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +225,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAdminMenu.resx">
+      <DependentUpon>NewAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OurStoryMenu.resx">
       <DependentUpon>OurStoryMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +244,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\LocationMenu.resx">
+      <DependentUpon>LocationMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +355,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shortBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger-logo-template_441059-18-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
