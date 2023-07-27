@@ -9,10 +9,10 @@ namespace MyBusinessApplicationGUI.BL
     class UserReveiw
     {
         private string name;
-        private int number;
-        private int rating;
+        private double number;
+        private double rating;
         private string message;
-        public UserReveiw(string name, int number, int rating, string message)
+        public UserReveiw(string name, double number, double rating, string message)
         {
             this.name = name;
             this.number = number;
@@ -27,19 +27,19 @@ namespace MyBusinessApplicationGUI.BL
         {
             this.name = name;
         }
-        public int GetNumber()
+        public double GetNumber()
         {
             return number;
         }
-        public void SetNumber(int number)
+        public void SetNumber(double number)
         {
             this.number = number;
         }
-        public int GetRating()
+        public double GetRating()
         {
             return rating;
         }
-        public void SetRating(int rating)
+        public void SetRating(double rating)
         {
             this.rating = rating;
         }

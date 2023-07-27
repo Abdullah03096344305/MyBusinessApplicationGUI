@@ -43,10 +43,10 @@ namespace MyBusinessApplicationGUI.DL
                 {
                     string userName = ParseData(record, 1);
                     string userNumber = ParseData(record, 2);
-                    string userRating = ParseData(record, 1);
-                    string userMessage = ParseData(record, 2);
-                    int Number = int.Parse(userNumber);
-                    int Rating = int.Parse(userRating);
+                    string userRating = ParseData(record, 3);
+                    string userMessage = ParseData(record, 4);
+                    double Number = double.Parse(userNumber);
+                    double Rating = double.Parse(userRating);
                     UserReveiw user = new UserReveiw(userName, Number,Rating, userMessage);
                     AddReveiwIntoList(user);
                 }
@@ -63,7 +63,10 @@ namespace MyBusinessApplicationGUI.DL
             file.Flush();
             file.Close();
         }
-
+        public static List<UserReveiw> GetUsers()
+        {
+            return userReveiws;
+        }
 
 
 

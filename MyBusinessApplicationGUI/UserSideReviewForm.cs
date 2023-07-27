@@ -35,10 +35,10 @@ namespace MyBusinessApplicationGUI
             string userNumber = textBox2.Text;
             string userRating = textBox3.Text;
             string userMessage = textBox4.Text;
-            int Number = int.Parse(userNumber);
-            int Rating = int.Parse(userRating);
+            double number = double.Parse(userNumber);
+            double rating = double.Parse(userRating);
             string ReveiwFilePath = "ReveiwFile.txt";
-            UserReveiw user = new UserReveiw(userName, Number,Rating,userMessage);
+            UserReveiw user = new UserReveiw(userName, number,rating,userMessage);
             UserReveiwDL.AddReveiwIntoList(user);
             UserReveiwDL.StoreUserIntoFile(user, ReveiwFilePath);
             MessageBox.Show("Review Added SuccessFully");
@@ -58,6 +58,16 @@ namespace MyBusinessApplicationGUI
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void UserSideReviewForm_Load(object sender, EventArgs e)
         {
 
         }

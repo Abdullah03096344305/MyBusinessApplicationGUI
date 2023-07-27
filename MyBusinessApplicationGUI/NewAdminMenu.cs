@@ -122,15 +122,13 @@ namespace MyBusinessApplicationGUI
 
         private void button14_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new SalesForm());
             HideSubMenu();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new AdminSideReveiwForm());
             HideSubMenu();
         }
 

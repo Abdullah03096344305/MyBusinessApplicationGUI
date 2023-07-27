@@ -35,7 +35,8 @@ namespace MyBusinessApplicationGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form UserM = new UserSideReviewForm();
+            UserM.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
