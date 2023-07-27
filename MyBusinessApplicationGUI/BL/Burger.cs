@@ -28,7 +28,7 @@ namespace MyBusinessApplicationGUI.BL
         {
             this.burgerName = burgerName;
         }
-        public void SetBurgerName(int burgerPrice)
+        public void SetBurgerPrice(int burgerPrice)
         {
             this.burgerPrice = burgerPrice;
         }

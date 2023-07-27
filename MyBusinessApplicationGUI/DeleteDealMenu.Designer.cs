@@ -95,9 +95,9 @@ namespace MyBusinessApplicationGUI
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(313, 118);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(265, 23);
+            this.label3.Size = new System.Drawing.Size(276, 23);
             this.label3.TabIndex = 79;
-            this.label3.Text = "Select a Item and Press Delete";
+            this.label3.Text = "Select an Item and Press Delete";
             // 
             // DealListView
             // 

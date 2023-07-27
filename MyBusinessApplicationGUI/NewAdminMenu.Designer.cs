@@ -106,7 +106,7 @@
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button13.Size = new System.Drawing.Size(233, 42);
             this.button13.TabIndex = 1;
-            this.button13.Text = "button13";
+            this.button13.Text = "Customer Reviews";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
@@ -123,7 +123,7 @@
             this.button14.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button14.Size = new System.Drawing.Size(233, 40);
             this.button14.TabIndex = 0;
-            this.button14.Text = "button14";
+            this.button14.Text = "Sales Today";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
@@ -139,7 +139,7 @@
             this.btnHelp.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(233, 45);
             this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "Help";
+            this.btnHelp.Text = "Sales and Customer";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
@@ -167,7 +167,7 @@
             this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button10.Size = new System.Drawing.Size(233, 42);
             this.button10.TabIndex = 1;
-            this.button10.Text = "button10";
+            this.button10.Text = "Deal";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -184,7 +184,7 @@
             this.button11.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button11.Size = new System.Drawing.Size(233, 40);
             this.button11.TabIndex = 0;
-            this.button11.Text = "button11";
+            this.button11.Text = "Burger";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
@@ -200,7 +200,7 @@
             this.btnTools.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTools.Size = new System.Drawing.Size(233, 45);
             this.btnTools.TabIndex = 6;
-            this.btnTools.Text = "Tools";
+            this.btnTools.Text = "View Products";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.UseVisualStyleBackColor = true;
             this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
@@ -228,7 +228,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(233, 42);
             this.button7.TabIndex = 1;
-            this.button7.Text = "button7";
+            this.button7.Text = "Deal";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -245,7 +245,7 @@
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(233, 40);
             this.button8.TabIndex = 0;
-            this.button8.Text = "button8";
+            this.button8.Text = "Burger";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -261,7 +261,7 @@
             this.btnEquilizer.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEquilizer.Size = new System.Drawing.Size(233, 45);
             this.btnEquilizer.TabIndex = 4;
-            this.btnEquilizer.Text = "Equilizer";
+            this.btnEquilizer.Text = "Update Product";
             this.btnEquilizer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEquilizer.UseVisualStyleBackColor = true;
             this.btnEquilizer.Click += new System.EventHandler(this.btnEquilizer_Click);

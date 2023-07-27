@@ -74,7 +74,7 @@ namespace MyBusinessApplicationGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            OpenChildForms(new Form2());
+            OpenChildForms(new AddBurgerMenu());
             HideSubMenu();
         }
 
@@ -98,8 +98,7 @@ namespace MyBusinessApplicationGUI
 
         private void button8_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new UpdateBurgerForm());
             HideSubMenu();
         }
 

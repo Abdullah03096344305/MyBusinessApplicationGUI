@@ -51,7 +51,6 @@ namespace MyBusinessApplicationGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // remove button functionality here code here
             if (BurgerListView.SelectedItems.Count == 0)
             {
                 MessageBox.Show("Please select a burger to remove.");

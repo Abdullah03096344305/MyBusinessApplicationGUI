@@ -21,12 +21,9 @@ namespace MyBusinessApplicationGUI.DL
         {
             deals.Add(deal);
         }
-
-        public static void AddDealIntoListView(Deals deal, ListView listView)
+        public static List<Deals> GetDeals()
         {
-            ListViewItem item = new ListViewItem(deal.GetDealName());
-            item.SubItems.Add(deal.GetDealPrice().ToString());
-            listView.Items.Add(item);
+            return deals;
         }
         public static void RemoveDealFromList(string dealName, int dealPrice)
         {
@@ -36,10 +33,14 @@ namespace MyBusinessApplicationGUI.DL
                 deals.Remove(dealToRemove);
             }
         }
-        public static List<Deals> GetDeals()
+
+        public static void AddDealIntoListView(Deals deal, ListView listView)
         {
-            return deals;
+            ListViewItem item = new ListViewItem(deal.GetDealName());
+            item.SubItems.Add(deal.GetDealPrice().ToString());
+            listView.Items.Add(item);
         }
+       
         public static string ParseData(string record, int field)
         {
             int comma = 1;
@@ -57,36 +58,24 @@ namespace MyBusinessApplicationGUI.DL
             }
             return item;
         }
-        
+
         public static bool ReadDealFile(string dealPath)
         {
             if (File.Exists(dealPath))
             {
-                using (StreamReader file = new StreamReader(dealPath))
+                deals.Clear();
+                StreamReader fileVariable = new StreamReader(dealPath);
+                string record;
+                while ((record = fileVariable.ReadLine()) != null)
                 {
-                    string record;
-                    while ((record = file.ReadLine()) != null)
-                    {
-                        string[] fields = record.Split(',');
-                        if (fields.Length >= 2)
-                        {
-                            string dealName = fields[0];
-                            int price;
-                            if (int.TryParse(fields[1], out price))
-                            {
-                                Deals deals = new Deals(dealName, price);
-                                AddDealToList(deals);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Invalid Price in Record");
-
-                            }
-                        }
-                    }
-                    return true;
+                    string dealName = ParseData(record, 1);
+                    string dealPrice = ParseData(record, 2);
+                    int price = int.Parse(dealPrice);
+                    Deals deal = new Deals(dealName, price);
+                    AddDealToList(deal);
                 }
-
+                fileVariable.Close();
+                return true;
             }
             else
             {

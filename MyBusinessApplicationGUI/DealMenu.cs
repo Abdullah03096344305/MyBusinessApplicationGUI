@@ -19,38 +19,21 @@ namespace MyBusinessApplicationGUI
         {
             InitializeComponent();
         }
-       /* int totalPrice;*/
-        private void DealMenu_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            string dealPath = "dealFile.txt";
-            DealDL.ReadDealFile(dealPath);
-            UpdateListView();
-        }
-        public void UpdateListView()
-        {
-            DealListView.Items.Clear(); 
-            foreach (var deal in DealDL.GetDeals())
-            {
-                AddDealToListView(deal);
-            }
-        }
-        private void AddDealToListView(Deals deal)
-        {
-            ListViewItem item = new ListViewItem(deal.GetDealName());
-            item.SubItems.Add(deal.GetDealPrice().ToString());
-            DealListView.Items.Add(item);
+            this.Close();
         }
         public int GetDealPrice()
         {
             return dealtotalPrice;
         }
-        private void button2_Click(object sender, EventArgs e)
+
+
+        private void DealMenu_Load(object sender, EventArgs e)
         {
-            this.Close();
-        }
-        private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)
-        {
-            textBoxQuantity.Text = " ";
+            string dealPath = "dealFile.txt";
+            DealDL.ReadDealFile(dealPath);
+            UpdateListView();
         }
         private void DealListView_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -70,5 +53,26 @@ namespace MyBusinessApplicationGUI
                 Genral.TotalPrice += dealtotalPrice;
             }
         }
+        private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)
+        {
+            textBoxQuantity.Text = " ";
+        }
+        public void UpdateListView()
+        {
+            DealListView.Items.Clear(); 
+            foreach (var deal in DealDL.GetDeals())
+            {
+                AddDealToListView(deal);
+            }
+        }
+        private void AddDealToListView(Deals deal)
+        {
+            ListViewItem item = new ListViewItem(deal.GetDealName());
+            item.SubItems.Add(deal.GetDealPrice().ToString());
+            DealListView.Items.Add(item);
+        }
+      
+       
+        
     }
 }
