@@ -24,5 +24,13 @@ namespace MyBusinessApplicationGUI.BL
         {
             return dealPrice;
         }
+        public void SetDealName(string dealName)
+        {
+            this.dealName = dealName;
+        }
+        public void SetDealPrice(int dealPrice)
+        {
+            this.dealPrice = dealPrice;
+        }
     }
 }

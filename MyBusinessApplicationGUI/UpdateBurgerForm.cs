@@ -17,8 +17,7 @@ namespace MyBusinessApplicationGUI
         public UpdateBurgerForm()
         {
             InitializeComponent();
-        }
-        string burgerPath = "burgerFile.txt";
+        }       
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

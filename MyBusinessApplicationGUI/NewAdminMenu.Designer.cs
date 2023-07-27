@@ -51,6 +51,7 @@
             this.btnMedia = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelHelpSubMenu.SuspendLayout();
@@ -86,12 +87,13 @@
             // panelHelpSubMenu
             // 
             this.panelHelpSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelHelpSubMenu.Controls.Add(this.button1);
             this.panelHelpSubMenu.Controls.Add(this.button13);
             this.panelHelpSubMenu.Controls.Add(this.button14);
             this.panelHelpSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHelpSubMenu.Location = new System.Drawing.Point(0, 652);
             this.panelHelpSubMenu.Name = "panelHelpSubMenu";
-            this.panelHelpSubMenu.Size = new System.Drawing.Size(233, 76);
+            this.panelHelpSubMenu.Size = new System.Drawing.Size(233, 115);
             this.panelHelpSubMenu.TabIndex = 9;
             // 
             // button13
@@ -104,7 +106,7 @@
             this.button13.Location = new System.Drawing.Point(0, 40);
             this.button13.Name = "button13";
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 42);
+            this.button13.Size = new System.Drawing.Size(233, 34);
             this.button13.TabIndex = 1;
             this.button13.Text = "Customer Reviews";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -408,6 +410,23 @@
             this.panelChildForm.TabIndex = 1;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(0, 74);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(233, 39);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Key";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -470,5 +489,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

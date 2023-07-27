@@ -104,22 +104,19 @@ namespace MyBusinessApplicationGUI
 
         private void button7_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new UpdateDealForm());
             HideSubMenu();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new ViewBurgerForm());
             HideSubMenu();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            // your code here
-            //....
+            OpenChildForms(new ViewDealForm());
             HideSubMenu();
         }
 
@@ -171,6 +168,12 @@ namespace MyBusinessApplicationGUI
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForms(new KeyForm());
+            HideSubMenu();
         }
     }
 }
