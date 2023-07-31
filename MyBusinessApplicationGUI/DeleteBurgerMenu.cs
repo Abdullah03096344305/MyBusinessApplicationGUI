@@ -44,8 +44,8 @@ namespace MyBusinessApplicationGUI
         }
         private void AddBurgerToListView(Burger burger)
         {
-            ListViewItem item = new ListViewItem(burger.GetBurgerName());
-            item.SubItems.Add(burger.GetBurgerPrice().ToString());
+            ListViewItem item = new ListViewItem(burger.GetName());
+            item.SubItems.Add(burger.GetPrice().ToString());
             BurgerListView.Items.Add(item);
         }
 

@@ -51,6 +51,7 @@ namespace MyBusinessApplicationGUI
             this.panel3 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidebarContainer.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuButton)).BeginInit();
@@ -60,6 +61,7 @@ namespace MyBusinessApplicationGUI
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -314,12 +316,23 @@ namespace MyBusinessApplicationGUI
             this.sidebarTimer.Interval = 10;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MyBusinessApplicationGUI.Properties.Resources.burger_logo_template_441059_18_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(381, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOrange;
-            this.ClientSize = new System.Drawing.Size(958, 530);
+            this.ClientSize = new System.Drawing.Size(991, 562);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sidebarContainer);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -339,7 +352,9 @@ namespace MyBusinessApplicationGUI
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -366,5 +381,6 @@ namespace MyBusinessApplicationGUI
         private System.Windows.Forms.PictureBox MenuButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

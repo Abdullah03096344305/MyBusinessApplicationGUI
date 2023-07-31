@@ -67,8 +67,8 @@ namespace MyBusinessApplicationGUI
         }
         private void AddDealToListView(Deals deal)
         {
-            ListViewItem item = new ListViewItem(deal.GetDealName());
-            item.SubItems.Add(deal.GetDealPrice().ToString());
+            ListViewItem item = new ListViewItem(deal.GetName());
+            item.SubItems.Add(deal.GetPrice().ToString());
             DealListView.Items.Add(item);
         }
       

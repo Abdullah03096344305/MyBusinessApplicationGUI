@@ -27,7 +27,7 @@ namespace MyBusinessApplicationGUI.DL
         }
         public static void RemoveBurgerFromList(string burgerName, int burgerPrice)
         {
-            Burger burgerToRemove = burgers.FirstOrDefault(b => b.GetBurgerName() == burgerName && b.GetBurgerPrice() == burgerPrice);
+            Burger burgerToRemove = burgers.FirstOrDefault(b => b.GetName() == burgerName && b.GetPrice() == burgerPrice);
             if (burgerToRemove != null)
             {
                 burgers.Remove(burgerToRemove);
@@ -36,8 +36,8 @@ namespace MyBusinessApplicationGUI.DL
 
         public static void AddBurgerIntoListView(Burger burger, ListView listView)
         {
-            ListViewItem item = new ListViewItem(burger.GetBurgerName());
-            item.SubItems.Add(burger.GetBurgerPrice().ToString());
+            ListViewItem item = new ListViewItem(burger.GetName());
+            item.SubItems.Add(burger.GetPrice().ToString());
             listView.Items.Add(item);
         }
         public static string ParseData(string record, int field)
@@ -83,7 +83,7 @@ namespace MyBusinessApplicationGUI.DL
         public static void StoreUserIntoFile(Burger burgers, string burgerPath)
         {
             StreamWriter file = new StreamWriter(burgerPath, true);
-            file.WriteLine(burgers.GetBurgerName() + "," + burgers.GetBurgerPrice());
+            file.WriteLine(burgers.GetName() + "," + burgers.GetPrice());
             file.Flush();
             file.Close();
         }
@@ -93,7 +93,7 @@ namespace MyBusinessApplicationGUI.DL
             {
                 foreach (var burger in burgers)
                 {
-                    file.WriteLine(burger.GetBurgerName() + "," + burger.GetBurgerPrice());
+                    file.WriteLine(burger.GetName() + "," + burger.GetPrice());
                 }
                 file.Flush();
             }

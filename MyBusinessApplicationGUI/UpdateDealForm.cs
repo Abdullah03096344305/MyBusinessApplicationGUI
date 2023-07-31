@@ -66,8 +66,8 @@ namespace MyBusinessApplicationGUI
 
         private void AddDealToListView(Deals deal)
         {
-            ListViewItem item = new ListViewItem(deal.GetDealName());
-            item.SubItems.Add(deal.GetDealPrice().ToString());
+            ListViewItem item = new ListViewItem(deal.GetName());
+            item.SubItems.Add(deal.GetPrice().ToString());
             DealListView.Items.Add(item);
         }
 
@@ -77,13 +77,13 @@ namespace MyBusinessApplicationGUI
             {
                 ListViewItem selectedItem = DealListView.SelectedItems[0];
                 string dealName = selectedItem.SubItems[0].Text;
-                Deals dealToUpdate = DealDL.deals.Find(deals => deals.GetDealName() == dealName);
+                Deals dealToUpdate = DealDL.deals.Find(deals => deals.GetName() == dealName);
 
                 if (dealToUpdate != null)
                 {
                     if (int.TryParse(textBox1.Text, out int newPrice))
                     {
-                        dealToUpdate.SetDealPrice(newPrice);
+                        dealToUpdate.SetPrice(newPrice);
                         DealListView.Items.Clear();
                         foreach (var updatedBurger in DealDL.GetDeals())
                         {

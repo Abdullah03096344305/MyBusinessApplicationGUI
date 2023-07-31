@@ -7,30 +7,10 @@ using System.Threading.Tasks;
 
 namespace MyBusinessApplicationGUI.BL
 {
-    class Deals
+    class Deals : Food
     {
-        private string dealName;
-        private int dealPrice;
-        public Deals(string dealName, int dealPrice)
+        public Deals(string name, int price) : base(name, price)
         {
-            this.dealName = dealName;
-            this.dealPrice = dealPrice;
-        }
-        public string GetDealName()
-        {
-            return dealName;
-        }
-        public int GetDealPrice()
-        {
-            return dealPrice;
-        }
-        public void SetDealName(string dealName)
-        {
-            this.dealName = dealName;
-        }
-        public void SetDealPrice(int dealPrice)
-        {
-            this.dealPrice = dealPrice;
         }
     }
 }

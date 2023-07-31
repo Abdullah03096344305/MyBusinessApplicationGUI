@@ -27,7 +27,7 @@ namespace MyBusinessApplicationGUI.DL
         }
         public static void RemoveDealFromList(string dealName, int dealPrice)
         {
-            Deals dealToRemove = deals.FirstOrDefault(d => d.GetDealName() == dealName && d.GetDealPrice() == dealPrice);
+            Deals dealToRemove = deals.FirstOrDefault(d => d.GetName() == dealName && d.GetPrice() == dealPrice);
             if (dealToRemove != null)
             {
                 deals.Remove(dealToRemove);
@@ -36,8 +36,8 @@ namespace MyBusinessApplicationGUI.DL
 
         public static void AddDealIntoListView(Deals deal, ListView listView)
         {
-            ListViewItem item = new ListViewItem(deal.GetDealName());
-            item.SubItems.Add(deal.GetDealPrice().ToString());
+            ListViewItem item = new ListViewItem(deal.GetName());
+            item.SubItems.Add(deal.GetPrice().ToString());
             listView.Items.Add(item);
         }
        
@@ -86,7 +86,7 @@ namespace MyBusinessApplicationGUI.DL
         public static void StoreUserIntoFile(Deals deals, string dealPath)
         {
             StreamWriter file = new StreamWriter(dealPath, true);
-            file.WriteLine(deals.GetDealName() + "," + deals.GetDealPrice());
+            file.WriteLine(deals.GetName() + "," + deals.GetPrice());
             file.Flush();
             file.Close();
         }
@@ -96,7 +96,7 @@ namespace MyBusinessApplicationGUI.DL
             {
                 foreach (var deal in deals)
                 {
-                    file.WriteLine(deal.GetDealName() + "," + deal.GetDealPrice());
+                    file.WriteLine(deal.GetName() + "," + deal.GetPrice());
                 }
                 file.Flush();
             }

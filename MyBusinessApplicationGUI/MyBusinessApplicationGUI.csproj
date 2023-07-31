@@ -79,6 +79,7 @@
     <Compile Include="BL\AdminKey.cs" />
     <Compile Include="BL\Burger.cs" />
     <Compile Include="BL\Deals.cs" />
+    <Compile Include="BL\Food.cs" />
     <Compile Include="BL\Genral.cs" />
     <Compile Include="BL\MUser.cs" />
     <Compile Include="BL\UserReveiw.cs" />

@@ -65,8 +65,8 @@ namespace MyBusinessApplicationGUI
 
         private void AddBurgerToListView(Burger burger)
         {
-            ListViewItem item = new ListViewItem(burger.GetBurgerName());
-            item.SubItems.Add(burger.GetBurgerPrice().ToString());
+            ListViewItem item = new ListViewItem(burger.GetName());
+            item.SubItems.Add(burger.GetPrice().ToString());
             BurgerListView.Items.Add(item);
         }
 
@@ -76,13 +76,13 @@ namespace MyBusinessApplicationGUI
             {
                 ListViewItem selectedItem = BurgerListView.SelectedItems[0];
                 string burgerName = selectedItem.SubItems[0].Text;
-                Burger burgerToUpdate = BurgerDL.burgers.Find(burger => burger.GetBurgerName() == burgerName);
+                Burger burgerToUpdate = BurgerDL.burgers.Find(burger => burger.GetName() == burgerName);
 
                 if (burgerToUpdate != null)
                 {
                     if (int.TryParse(textBox1.Text, out int newPrice))
                     {
-                        burgerToUpdate.SetBurgerPrice(newPrice);
+                        burgerToUpdate.SetPrice(newPrice);
                         BurgerListView.Items.Clear();
                         foreach (var updatedBurger in BurgerDL.GetBurgers())
                         {
